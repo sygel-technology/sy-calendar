@@ -7,6 +7,6 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
-[nombre_tecnico](nombre_tecnico/) | 15.0.1.0.0 | descripcion
+[calendar_document_popup](calendar_document_popup/) | 15.0.1.0.0 | Display Documents in Calendar Popup
 
 [//]: # (end addons)
