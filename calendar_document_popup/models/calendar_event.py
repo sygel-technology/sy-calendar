@@ -1,22 +1,20 @@
 # Copyright 2022 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import fields, models, api
+from odoo import api, fields, models
 from odoo.http import request
 
 
 class Meeting(models.Model):
-    _inherit = 'calendar.event'
+    _inherit = "calendar.event"
 
     documents_link = fields.Char(
-        compute="get_documents_link",
-        string="Documents",
-        store=True
+        compute="get_documents_link", string="Documents", store=True
     )
 
-    @api.depends('res_model', 'res_id')
+    @api.depends("res_model", "res_id")
     def get_documents_link(self):
-        url_base = request.env['ir.config_parameter'].get_param('web.base.url')
+        url_base = request.env["ir.config_parameter"].get_param("web.base.url")
         for record in self:
             res = ""
             if record.res_model and record.res_id:
