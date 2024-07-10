@@ -1,8 +1,8 @@
 
 <!-- /!\ Non OCA Context : Set here the badge of your runbot / runboat instance. -->
-[![Pre-commit Status](https://github.com/sygel-technology/sy-calendar/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/sygel-technology/sy-calendar/actions/workflows/pre-commit.yml?query=branch%3A15.0)
-[![Build Status](https://github.com/sygel-technology/sy-calendar/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/sygel-technology/sy-calendar/actions/workflows/test.yml?query=branch%3A15.0)
-[![codecov](https://codecov.io/gh/sygel-technology/sy-calendar/branch/15.0/graph/badge.svg)](https://codecov.io/gh/sygel-technology/sy-calendar)
+[![Pre-commit Status](https://github.com/sygel-technology/sy-calendar/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/sygel-technology/sy-calendar/actions/workflows/pre-commit.yml?query=branch%3A16.0)
+[![Build Status](https://github.com/sygel-technology/sy-calendar/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/sygel-technology/sy-calendar/actions/workflows/test.yml?query=branch%3A16.0)
+[![codecov](https://codecov.io/gh/sygel-technology/sy-calendar/branch/16.0/graph/badge.svg)](https://codecov.io/gh/sygel-technology/sy-calendar)
 <!-- /!\ Non OCA Context : Set here the badge of your translation instance. -->
 
 <!-- /!\ do not modify above this line -->
@@ -17,11 +17,7 @@ Odoo calendar
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[calendar_document_popup](calendar_document_popup/) | 15.0.1.0.0 |  | Display Documents in Calendar Popup
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
