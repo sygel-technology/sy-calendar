@@ -19,7 +19,7 @@ class Meeting(models.Model):
             res = ""
             if record.res_model and record.res_id:
                 res = url_base
-                res += "/web#id={0}&view_type=form&model={1}".format(
+                res += "/web#id={}&view_type=form&model={}".format(
                     record.res_id, record.res_model
                 )
             record.documents_link = res
