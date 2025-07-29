@@ -18,7 +18,10 @@
         <field name="inherit_id" ref="calendar.view_calendar_event_calendar" />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='partner_id']" position="before">
-                <field name="principal_partner_id" options="{'icon': 'fa fa-user-o'}" />
+                <field
+                    name="principal_partner_id"
+                    options="{'icon': 'fa fa-user-circle-o'}"
+                />
             </xpath>
         </field>
     </record>
@@ -40,6 +43,9 @@
         <field name="model">calendar.event</field>
         <field name="inherit_id" ref="calendar.view_calendar_event_search" />
         <field name="arch" type="xml">
+            <xpath expr="//field[@name='description']" position="after">
+                <field name="principal_partner_id" string="Partner" />
+            </xpath>
             <xpath expr="//filter[@name='free']" position="after">
                 <filter
                     string="Partner"
