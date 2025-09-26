@@ -21,7 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[calendar_document_popup](calendar_document_popup/) | 15.0.1.0.0 |  | Display Documents in Calendar Popup
+[calendar_document_popup](calendar_document_popup/) | 15.0.1.0.1 |  | Display Documents in Calendar Popup
 
 [//]: # (end addons)
 

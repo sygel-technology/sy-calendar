@@ -4,7 +4,7 @@
 {
     "name": "Calendar Document Popup",
     "summary": "Display Documents in Calendar Popup",
-    "version": "15.0.1.0.0",
+    "version": "15.0.1.0.1",
     "category": "Calendar",
     "website": "https://github.com/sygel-technology/sy-calendar",
     "author": "Sygel, Odoo Community Association (OCA)",
