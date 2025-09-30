@@ -21,6 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[calendar_activity_event_done](calendar_activity_event_done/) | 15.0.1.0.0 |  | Calendar events linked with done activities will be shown as done
 [calendar_document_popup](calendar_document_popup/) | 15.0.1.0.1 |  | Display Documents in Calendar Popup
 
 [//]: # (end addons)

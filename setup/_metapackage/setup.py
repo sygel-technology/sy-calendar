@@ -8,6 +8,7 @@ setuptools.setup(
     description="Meta package for sygel-technology-sy-calendar Odoo addons",
     version=version,
     install_requires=[
+        'odoo-addon-calendar_activity_event_done>=15.0dev,<15.1dev',
         'odoo-addon-calendar_document_popup>=15.0dev,<15.1dev',
     ],
     classifiers=[
