@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_calendar_event_form_inherit_partner" model="ir.ui.view">
+        <field name="name">calendar.event.form.inherit.partner</field>
+        <field name="model">calendar.event</field>
+        <field name="inherit_id" ref="calendar.view_calendar_event_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="principal_partner_id" />
+                <field name="principal_partner_phone" widget="phone" />
+                <field name="principal_partner_mobile" widget="phone" />
+            </xpath>
+        </field>
+    </record>
+    <record id="view_view_calendar_event_calendar_inherit_partner" model="ir.ui.view">
+        <field name="name">calendar.event.calendar.inherit.partner</field>
+        <field name="model">calendar.event</field>
+        <field name="inherit_id" ref="calendar.view_calendar_event_calendar" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="before">
+                <field
+                    name="principal_partner_id"
+                    options="{'icon': 'fa fa-user-circle-o'}"
+                />
+            </xpath>
+        </field>
+    </record>
+    <record
+        id="view_calendar_event_form_quick_create_inherit_partner"
+        model="ir.ui.view"
+    >
+        <field name="name">calendar.event.form.quick.create.inherit.partner</field>
+        <field name="model">calendar.event</field>
+        <field name="inherit_id" ref="calendar.view_calendar_event_form_quick_create" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_ids']" position="before">
+                <field name="principal_partner_id" />
+            </xpath>
+        </field>
+    </record>
+    <record id="view_calendar_event_search_inherit_partner" model="ir.ui.view">
+        <field name="name">calendar.event.search.inherit.partner</field>
+        <field name="model">calendar.event</field>
+        <field name="inherit_id" ref="calendar.view_calendar_event_search" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='description']" position="after">
+                <field name="principal_partner_id" string="Partner" />
+            </xpath>
+            <xpath expr="//filter[@name='free']" position="after">
+                <filter
+                    string="Partner"
+                    name="filter_principal_partner"
+                    domain="[('principal_partner_id', '!=', False)]"
+                />
+            </xpath>
+            <xpath expr="//filter[@name='responsible']" position="after">
+                <filter
+                    string="Partner"
+                    name="group_principal_partner"
+                    context="{'group_by': 'principal_partner_id'}"
+                />
+            </xpath>
+        </field>
+    </record>
+    <record id="view_calendar_event_tree_inherit_partner" model="ir.ui.view">
+        <field name="name">calendar.event.tree.inherit.partner</field>
+        <field name="model">calendar.event</field>
+        <field name="inherit_id" ref="calendar.view_calendar_event_tree" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_ids']" position="before">
+                <field name="principal_partner_id" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
